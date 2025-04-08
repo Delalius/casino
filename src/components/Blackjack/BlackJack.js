@@ -328,8 +328,8 @@ export default function Blackjack() {
                     ref={(el) => (dealerCardsRef.current[index] = el)}
                     src={
                       card.name === "back"
-                        ? "/cards/back.png"
-                        : `/cards/${card.name}.png`
+                        ? "../../assets/images/back.png"
+                        : `../../assets/images/${card.name}.png`
                     }
                     alt={card.name}
                   />
@@ -347,7 +347,7 @@ export default function Blackjack() {
                     className="card"
                     key={index}
                     ref={(el) => (playerCardsRef.current[index] = el)}
-                    src={`/cards/${card.name}.png`}
+                    src={`../../assets/images/${card.name}.png`}
                     alt={card.name}
                   />
                 ) : null
