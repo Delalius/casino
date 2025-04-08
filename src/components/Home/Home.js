@@ -1,9 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import './Home.css';
-import blackjackImg from "../../../public/assets/images/blackjack.jpg";
-import slotsImg from "../../../public/assets/images/slots.jpg";
-import pokerImg from "../../../public/assets/images/poker.jpg";
 import { Link } from 'react-router-dom';
 
 export default function Home() {
@@ -23,9 +20,9 @@ export default function Home() {
     }, []);
 
     const games = [
-        { name: "BlackJack", img: blackjackImg, link: "/blackjack" },
-        { name: "Slots", img: slotsImg, link: "/slots" },
-        { name: "Poker", img: pokerImg, link: "/poker" }
+        { name: "BlackJack", img: `${process.env.PUBLIC_URL}/assets/images/blackjack.jpg`, link: "/blackjack" },
+        { name: "Slots", img: `${process.env.PUBLIC_URL}/assets/images/slots.jpg`, link: "/slots" },
+        { name: "Poker", img: `${process.env.PUBLIC_URL}/assets/images/poker.jpg`, link: "/poker" }
     ];
 
     return (

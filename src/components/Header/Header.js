@@ -1,7 +1,6 @@
 import React from "react";
 import './Header.css';
 import '../../styles.css';
-import logo from '/assets/images/logo.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTelegram, faViber} from '@fortawesome/free-brands-svg-icons';
 import { Link } from 'react-router-dom';
@@ -10,7 +9,7 @@ export default function Header() {
     return (
         <header className="header">
             <Link to="/" className="logo">
-                <img src={logo} alt="Casino Logo" />
+                <img src={`${process.env.PUBLIC_URL}/assets/images/logo.png`} alt="Casino Logo" />
             </Link>
             <nav className="nav">
                 <ul>
