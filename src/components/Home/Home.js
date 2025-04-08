@@ -1,9 +1,9 @@
 import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import './Home.css';
-import blackjackImg from "../../assets/images/blackjack.jpg";
-import slotsImg from "../../assets/images/slots.jpg";
-import pokerImg from "../../assets/images/poker.jpg";
+import blackjackImg from "/assets/images/blackjack.jpg";
+import slotsImg from "/assets/images/slots.jpg";
+import pokerImg from "/assets/images/poker.jpg";
 import { Link } from 'react-router-dom';
 
 export default function Home() {

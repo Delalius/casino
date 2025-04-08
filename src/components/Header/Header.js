@@ -1,7 +1,7 @@
 import React from "react";
 import './Header.css';
 import '../../styles.css';
-import logo from '../../assets/images/logo.png';
+import logo from '/assets/images/logo.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTelegram, faViber} from '@fortawesome/free-brands-svg-icons';
 import { Link } from 'react-router-dom';
