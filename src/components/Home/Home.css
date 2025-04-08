@@ -1,6 +1,6 @@
 /* Hero секция */
 .hero {
-    background: url('/assets/images/hero.jpg') center/cover no-repeat;
+    background: url('/public/assets/images/hero.jpg') center/cover no-repeat;
     min-height: 100vh;
     display: flex;
     align-items: center;

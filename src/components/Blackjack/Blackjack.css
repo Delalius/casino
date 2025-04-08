@@ -1,7 +1,7 @@
 /* Общие стили */
 .blackjack-page {
     font-family: 'Montserrat', sans-serif;
-    background-image: url('../../assets/images/blackjack.jpg');
+    background-image: url('/public/assets/images/blackjack.jpg');
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;

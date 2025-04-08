@@ -1,5 +1,5 @@
 body{
     font-family: 'Montserrat', sans-serif;
     overflow: auto;
-    background-image: url('../src/assets/images/background.jpg');
+    background-image: url('/public/assets/images/background.jpg');
 }
