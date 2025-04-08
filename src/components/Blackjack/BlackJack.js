@@ -26,7 +26,6 @@ const deck = [
 
 const getRandomCard = () => deck[Math.floor(Math.random() * deck.length)];
 
-
 const BetControls = ({ placeBet, resetBet }) => (
   <div className="bet-options">
     {betOptions.map((amount) => (
@@ -357,23 +356,22 @@ export default function Blackjack() {
         </div>
 
         <div className="buttons-container">
-  <button onClick={dealCards} disabled={bet === 0 || !buttonsVisible}>
-    Раздать карты
-  </button>
-  <button
-    onClick={hit}
-    disabled={gameOver || playerCards.length === 0 || !buttonsVisible}
-  >
-    Взять карту
-  </button>
-  <button
-    onClick={stand}
-    disabled={gameOver || playerCards.length === 0 || !buttonsVisible}
-  >
-    Остановиться
-  </button>
-</div>
-
+          <button onClick={dealCards} disabled={bet === 0 || !buttonsVisible}>
+            Раздать карты
+          </button>
+          <button
+            onClick={hit}
+            disabled={gameOver || playerCards.length === 0 || !buttonsVisible}
+          >
+            Взять карту
+          </button>
+          <button
+            onClick={stand}
+            disabled={gameOver || playerCards.length === 0 || !buttonsVisible}
+          >
+            Остановиться
+          </button>
+        </div>
       </div>
     </div>
   );
