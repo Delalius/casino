@@ -1,0 +1,155 @@
+/* Hero секция */
+.hero {
+    background: url('../../assets/images/hero.jpg') center/cover no-repeat;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+.hero-content {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    color: #f1c40f;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f39c12;
+    color: #111;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: #e67e22;
+}
+
+/* Сетка игр */
+.games {
+    padding: 50px 20px;
+    background-color: #111;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.game-content h2 {
+    font-size: 2rem;
+    color: #f1c40f;
+    margin-bottom: 30px;
+}
+
+.game-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+.wip-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    text-transform: uppercase;
+    pointer-events: none;
+}
+
+/* Обновим .game-card, чтобы была позиция относительная */
+.game-card {
+    position: relative;
+    background-color: #222;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.game-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(255, 215, 0, 0.6);
+}
+
+.game-card img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.game-card h3 {
+    color: #f1c40f;
+    margin: 15px 0;
+    font-size: 1.3rem;
+}
+
+.game-card-button {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ffd404;
+    color: #141301;
+    border: none;
+    padding: 12px 30px;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none; /* Убираем подчеркивание */
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.2); /* 3D тень */
+}
+
+.game-card-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 4px 8px rgba(0, 0, 0, 0.3); /* Усиленная тень при наведении */
+}
+
+.game-card-button:active {
+    transform: scale(1.05); /* Вдавливание кнопки при нажатии */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3), 0 1px 2px rgba(0, 0, 0, 0.5); /* Уменьшенная тень при нажатии */
+}
+
+.game-card-button:focus {
+    outline: none; /* Убираем стандартное выделение */
+    box-shadow: 0 0 0 2px rgba(255, 212, 4, 0.5); /* Псевдообводка для фокуса */
+}
+
+.game-card-button:disabled {
+    background-color: #7f8c8d;
+    cursor: not-allowed;
+    box-shadow: none; /* Убираем тень для отключенной кнопки */
+}
+
+
+.game-card button:hover {
+    background-color: #e67e22;
+}

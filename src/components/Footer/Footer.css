@@ -1,0 +1,27 @@
+.footer {
+    background-color: #000;
+    color: #888;
+    padding: 30px 20px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    border-top: 1px solid #333;
+}
+
+.footer p {
+    margin: 0;
+    color: #f1c40f;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.disclaimer {
+    display: block;
+    margin-top: 10px;
+    color: #777;
+    font-size: 12px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.4;
+}
