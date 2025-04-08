@@ -18,10 +18,10 @@ const deck = [
   { name: "8", value: 8 },
   { name: "9", value: 9 },
   { name: "10", value: 10 },
-  { name: "J", value: 10 },
-  { name: "Q", value: 10 },
-  { name: "K", value: 10 },
-  { name: "A", value: 11 },
+  { name: "j", value: 10 },
+  { name: "q", value: 10 },
+  { name: "k", value: 10 },
+  { name: "a", value: 11 },
 ];
 
 const getRandomCard = () => deck[Math.floor(Math.random() * deck.length)];
