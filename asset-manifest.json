@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/casino/static/css/main.09020b59.css",
-    "main.js": "/casino/static/js/main.fc12fa63.js",
+    "main.js": "/casino/static/js/main.a3ce18f5.js",
     "static/media/poker.jpg": "/casino/static/media/poker.65a9c49619b07bd26077.jpg",
     "static/media/blackjack.jpg": "/casino/static/media/blackjack.2a135d89ffc106dca55a.jpg",
     "static/media/background.jpg": "/casino/static/media/background.24516724cb3be9733c74.jpg",
@@ -10,10 +10,10 @@
     "static/media/logo.png": "/casino/static/media/logo.5cd768e95a015c1296b9.png",
     "index.html": "/casino/index.html",
     "main.09020b59.css.map": "/casino/static/css/main.09020b59.css.map",
-    "main.fc12fa63.js.map": "/casino/static/js/main.fc12fa63.js.map"
+    "main.a3ce18f5.js.map": "/casino/static/js/main.a3ce18f5.js.map"
   },
   "entrypoints": [
     "static/css/main.09020b59.css",
-    "static/js/main.fc12fa63.js"
+    "static/js/main.a3ce18f5.js"
   ]
 }
