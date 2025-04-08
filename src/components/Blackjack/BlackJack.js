@@ -302,7 +302,7 @@ export default function Blackjack() {
     }
   }, [dealerCards]);
 
-  return (
+return (
     <div className="blackjack-page">
       <Header />
       <div className="game-container">
@@ -327,8 +327,8 @@ export default function Blackjack() {
                     ref={(el) => (dealerCardsRef.current[index] = el)}
                     src={
                       card.name === "back"
-                        ? "/public/assets/images/back.png"
-                        : `/public/assets/images/${card.name}.png`
+                        ? `${process.env.PUBLIC_URL}/assets/images/back.png`
+                        : `${process.env.PUBLIC_URL}/assets/images/${card.name}.png`
                     }
                     alt={card.name}
                   />
@@ -346,7 +346,7 @@ export default function Blackjack() {
                     className="card"
                     key={index}
                     ref={(el) => (playerCardsRef.current[index] = el)}
-                    src={`/public/assets/images/${card.name}.png`}
+                    src={`${process.env.PUBLIC_URL}/assets/images/${card.name}.png`}
                     alt={card.name}
                   />
                 ) : null
@@ -374,5 +374,5 @@ export default function Blackjack() {
         </div>
       </div>
     </div>
-  );
+);
 }
