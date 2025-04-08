@@ -10,13 +10,13 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/casino">
       <Header />
       <Routes>
-        <Route path="/" element={<Home />} /> {/* Главная */}
-        <Route path="/blackjack" element={<BlackJack />} /> {/* Блэкджек */}
-        <Route path="/slots" element={<Slots />} /> {/* Слоты */}
-        <Route path="/rules" element={<Rules />} /> {/* Страница правил */}
+        <Route path="/" element={<Home />} />
+        <Route path="/blackjack" element={<BlackJack />} />
+        <Route path="/slots" element={<Slots />} />
+        <Route path="/rules" element={<Rules />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
